@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestHub - Основы Государства и Права</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TestHub</div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Главная</a></li>
+                <li><a href="#tests">Тесты</a></li>
+                <li><a href="#about">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1>Добро пожаловать на TestHub!</h1>
+            <p>Проверь свои знания по основам государства и права Республики Узбекистан</p>
+            <a href="#tests" class="start-btn">Начать тестирование</a>
+        </section>
+
+        <section id="tests">
+            <h2>Выбери свой класс:</h2>
+            <div class="test-categories">
+                <button onclick="startTest(8)">8 класс</button>
+                <button onclick="startTest(9)">9 класс</button>
+                <button onclick="startTest(10)">10 класс</button>
+                <button onclick="startTest(11)">11 класс</button>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <div id="question-box">
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+                <button id="next-btn" onclick="nextQuestion()">Далее</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 TestHub. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
